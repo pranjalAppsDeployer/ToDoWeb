@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"  type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="images/bg-mobile-light.jpg" class="background" />
+      <header class="header">
+        <h1 class="header__title">Todo</h1>
+        <label class="header__lida">
+          <span class="header__icon"></span>
+          <input type="checkbox" />
+        </label>
+      </header>
+      <main class="content">
+        <form action="" class="todo">
+          <input
+            type="text"
+            class="todo__input"
+            placeholder="Create a new todo..."
+            maxlength="30"
+          />
+          <button class="todo__ghostButton"></button>
+
+
+          <div class="todo__content">
+            <div class="todo__items">
+            </div>
+            <div class="todo__options">
+              <p class="todo__left">0 items left</p>
+              <div class="categories">
+                <div class="categories__content">
+                  <div class="category">
+                    <input type="radio" name="category" class="all" />
+                    <label>All</label>
+                  </div>
+                  <div class="category">
+                    <input type="radio" name="category" class="active" />
+                    <label>Active</label>
+                  </div>
+                  <div class="category">
+                    <input type="radio" name="category" class="completed" />
+                    <label>Completed</label>
+                  </div>
+                </div>
+              </div>
+              <p class="todo__clear">Clear Completed</p>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"> Frontend Mentor </a
+      >, Coded by <a href="https://github.com/pranjal36"> Pranjal Gupta</a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
